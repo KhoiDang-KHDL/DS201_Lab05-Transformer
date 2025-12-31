@@ -11,7 +11,7 @@ def load_json_or_jsonl(filepath: str):
         with open(filepath, 'r', encoding='utf-8') as f:
             data = json.load(f)
     except json.JSONDecodeError:
-        print(f"File {filepath} có vẻ là JSON Lines. Đang chuyển sang chế độ đọc từng dòng...")
+        print(f"File JsonL")
         with open(filepath, 'r', encoding='utf-8') as f:
             for line in f:
                 line = line.strip()
