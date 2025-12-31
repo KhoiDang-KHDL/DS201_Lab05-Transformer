@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import math
-from .transformer import TransformerEncoder, PositionnalEncoding, generate_padding_mask
+from transformer import TransformerEncoder, PositionnalEncoding, generate_padding_mask
 
 class TransformerModel(nn.Module):
     def __init__(self, d_model: int, head: int, n_layers: int, d_ff: int, dropout: float, vocab):
